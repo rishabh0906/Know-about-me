@@ -7,13 +7,13 @@ let Contact_Palette = () => {
         rel="noreferrer"
       >
         <img
-          src="linkedin (1).png"
+          src="linkedin-dark.png"
           alt="linkedin"
           onMouseEnter={(e) => {
             e.currentTarget.src = "linkedin.png";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.src = "linkedin (1).png";
+            e.currentTarget.src = "linkedin-dark.png";
           }}
         />
       </a>
@@ -32,12 +32,12 @@ let Contact_Palette = () => {
       <a href="https://github.com/rishabh0906" target="_blank" rel="noreferrer">
         <img
           alt="github"
-          src="github (1).png"
+          src="github-dark.png"
           onMouseEnter={(e) => {
             e.currentTarget.src = "github.png";
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.src = "github (1).png";
+            e.currentTarget.src = "github-dark.png";
           }}
         />
       </a>

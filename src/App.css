@@ -8,15 +8,14 @@ body {
   height: 100vh;
   width: 100vw;
 }
-.logo-p{
+.logo-p {
   height: 2rem;
   width: 11rem;
   position: fixed;
   font-size: 1.5rem;
   top: 1rem;
   left: 2rem;
-  font-family: 'Indie Flower';
-  
+  font-family: "Indie Flower";
 }
 .NavBar {
   display: flex;
@@ -33,11 +32,10 @@ body {
 
 .NavBar p {
   margin: 1.5rem;
- 
 }
 
-.NavBar p a{
-  color:black;
+.NavBar p a {
+  color: black;
   text-decoration: none;
 }
 
@@ -68,9 +66,9 @@ body {
   position: relative;
   top: 5rem;
   left: 5rem;
-  overflow: hidden;
+  overflow: auto;
+  scroll-behavior: smooth;
   border-radius: 17px;
-
 }
 
 .Home-Animation {
@@ -79,7 +77,6 @@ body {
   position: relative;
   top: 25%;
   left: 25%;
- 
 }
 
 .Home-Animation svg {
@@ -118,17 +115,15 @@ text {
   font-family: "Indie Flower", cursive;
   font-weight: bold;
 }
-.Home-Animation p span{
+.Home-Animation p span {
   font-size: 1.6rem;
   margin: 0.3rem;
 }
-
 
 .show-p {
   animation-name: fade-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
- 
 }
 
 @keyframes fade-in {
@@ -145,66 +140,63 @@ text {
   }
 }
 
-.slide-left{
-
+.slide-left {
   animation-name: slidefromleft;
   animation-duration: 1.2s;
   animation-fill-mode: forwards;
 }
 
-@keyframes slidefromleft{
-
-  0%{
+@keyframes slidefromleft {
+  0% {
     width: 0px;
     height: 0px;
   }
-  
 
-
-  100%{
+  100% {
     width: calc(100vw - 5.6rem);
     height: calc(100vh - 5.6rem);
   }
 }
 
-
-.heading{
-
+.heading {
   margin: 1.2rem;
-
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
 }
-.About-paragraph{
+.About-paragraph {
   padding: 1rem;
   font-size: 1.5rem;
 }
-.About-paragraph a{
+.About-paragraph a {
   color: #2f3542;
 }
 
-.project p{
-  padding: 1.2rem;
+.project p {
+  padding: 1rem;
   font-size: 1.2rem;
 }
 
-.project h3{
-text-align: center;
+.project h3 {
+  text-align: center;
+  margin-top: 1.5rem;
 }
 /* .Gallery{
   display: flex;
 } */
 
-figure{
-  height: 12rem;
+figure {
+  max-height: 12rem;
   position: relative;
-  width: 12rem;
-  margin: 0;
+  max-width: 12rem;
+  margin: 1rem;
   display: flex;
-
+  overflow: hidden;
+  border-radius: 0px;
 }
 
-figure div{
-  height: 12rem;
-  width: 12rem;
+figure div.caption {
+  height: 100%;
+  width: 100%;
   position: absolute;
   background: black;
   opacity: 0.8;
@@ -215,20 +207,18 @@ figure div{
   align-items: center;
   justify-content: center;
   border-radius: 0px;
-
 }
 
-figcaption{
+figcaption {
   width: 60%;
   height: 60%;
   font-size: 0.8rem;
   opacity: 1;
   text-align: center;
   padding: 1rem;
-  
 }
 
-.upgrade-inp1{
+.upgrade-inp1 {
   position: absolute;
   top: 9rem;
   left: 5rem;
@@ -237,7 +227,7 @@ figcaption{
   border: 1px solid #2f3542;
 }
 
-.upgrade-inp2{
+.upgrade-inp2 {
   position: absolute;
   top: 9rem;
   left: 25rem;
@@ -246,16 +236,16 @@ figcaption{
   border: 1px solid #2f3542;
 }
 
-.upgrade-txt{
+.upgrade-txt {
   position: absolute;
-    top: 12rem;
-    left: 5rem;
-    font-size: 1.1rem;
-    outline: none;
+  top: 12rem;
+  left: 5rem;
+  font-size: 1.1rem;
+  outline: none;
   border: 1px solid #2f3542;
 }
 
-.upgrade-btn{
+.upgrade-btn {
   position: absolute;
   bottom: 7rem;
   left: 34rem;
@@ -265,4 +255,42 @@ figcaption{
   border: 1px solid #2f3542;
   background-color: #2f3542;
   color: white;
+  font-family:  "Indie Flower", cursive;
+  font-size: 1.2rem;
+}
+
+.AllPhotos-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 2rem;
+  font-family:  "Indie Flower", cursive;
+}
+
+.image img {
+  width: auto;
+  height: auto;
+  aspect-ratio: 1;
+  max-width: 12rem;
+  max-height: 12rem;
+  border-radius: 0px;
+}
+
+.Zoomed-pic {
+  display: none;
+  position: absolute;
+
+  height: 25rem;
+  width: 25rem;
+  z-index: 2;
+  top: 5rem;
+  left: 27rem;
+  border-radius: 0px;
+}
+
+.Zoomed-pic img {
+  height: inherit;
+  width: inherit;
+  aspect-ratio: 1;
+  border-radius: 0px;
 }
