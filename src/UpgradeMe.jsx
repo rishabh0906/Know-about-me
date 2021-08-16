@@ -1,10 +1,11 @@
 import Logo from "./Logo";
-import { useState } from "react";
+import { createElement, useState } from "react";
 
 let UpgradeMe = () => {
   let [name, setName] = useState("");
   let [email, setemail] = useState("");
   let [text, setText] = useState("");
+  let [messageSeen,setSeen]=useState(false);
 
   let serverRequest = async () => {
     let info = { name, email, text };
@@ -15,11 +16,19 @@ let UpgradeMe = () => {
       },
       body: JSON.stringify(info),
     });
+    let p= document.querySelector(".message");
     const resData = await response.json();
     if (resData.status === "success") {
-      alert("Message Sent.");
+    
+         p.innerHTML="Message Sent";
+         setTimeout(()=>{
+            setSeen(false);
+         },1000);
     } else if (resData.status === "fail") {
-      alert("Message failed to send.");
+      p.innerHTML="Message Failed";
+         setTimeout(()=>{
+            setSeen(false);
+         },1000);
     }
   };
 
@@ -27,6 +36,7 @@ let UpgradeMe = () => {
     <>
       <Logo />
       <div className="Main-Content slide-left">
+        <p className="message" style={{display:messageSeen==false?"none":"inline"}} >Sending...</p>
         <h1 className="heading">Let me Know You</h1>
 
         <input
@@ -64,8 +74,9 @@ let UpgradeMe = () => {
           className="upgrade-btn"
           onClick={(e) => {
             if (name == "" || email == "" || text == "") return;
-
+            setSeen(true);
             serverRequest().then(()=>{
+
               setName("");
               setText("");
               setemail("");

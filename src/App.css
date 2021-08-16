@@ -161,7 +161,7 @@ text {
 .heading {
   margin: 1.2rem;
   font-family: "Indie Flower", cursive;
-  font-weight: 600;
+  font-weight: 500;
 }
 .About-paragraph {
   padding: 1rem;
@@ -293,4 +293,16 @@ figcaption {
   width: inherit;
   aspect-ratio: 1;
   border-radius: 0px;
+}
+.message{
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 14rem;
+  right: 10rem;
+  height: 10rem;
+  width: 12rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family:  "Indie Flower", cursive;
 }
