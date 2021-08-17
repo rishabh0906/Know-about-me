@@ -9,6 +9,8 @@ import UpgradeMe from "./UpgradeMe";
 import Home from "./Home";
 
 function App() {
+
+  console.log(process.env);
   return (
     <>
       <Router>
