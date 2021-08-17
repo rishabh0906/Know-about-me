@@ -17,6 +17,14 @@ body {
   left: 2rem;
   font-family: "Indie Flower";
 }
+
+@media (max-width: 765px) {
+  .logo-p {
+    font-size: 75%;
+    top: 3.5rem;
+    margin: auto;
+  }
+}
 .NavBar {
   display: flex;
   position: fixed;
@@ -28,6 +36,15 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
+}
+
+@media (max-width: 765px) {
+  .NavBar {
+    height: 3rem;
+    width: 98%;
+    left: calc((100vw - 98%) / 2);
+    font-size: 70%;
+  }
 }
 
 .NavBar p {
@@ -53,6 +70,12 @@ body {
   font-size: 1.4rem;
 }
 
+@media (max-width: 765px) {
+  .Contact-Pallete {
+    width: 3rem;
+  }
+}
+
 .Contact-Pallete img {
   height: 2rem;
   width: 2rem;
@@ -73,12 +96,24 @@ body {
 
 .Home-Animation {
   height: 45%;
-  width: 45%;
+
   position: relative;
   top: 25%;
-  left: 25%;
+  left: 13%;
+}
+@media (max-width: 765px) {
+  .Home-Animation {
+    width: 100%;
+    left: 0%;
+  }
 }
 
+@media (min-width: 1024px) {
+  .Home-Animation {
+    left: 25%;
+    width: 45%;
+  }
+}
 .Home-Animation svg {
   height: 70%;
   width: 100%;
@@ -99,6 +134,13 @@ text {
   stroke-dasharray: 1;
   stroke-width: 2;
   font-weight: bold;
+  font-size: 4rem;
+}
+
+@media (max-width: 765px) {
+  text {
+    font-size: 70%;
+  }
 }
 
 .show {
@@ -114,6 +156,13 @@ text {
   color: #2f3542;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
+}
+
+@media (max-width: 765px) {
+  .Home-Animation p {
+    font-size: 70%;
+    top: 5.7rem;
+  }
 }
 .Home-Animation p span {
   font-size: 1.6rem;
@@ -176,6 +225,11 @@ text {
   font-size: 1.2rem;
 }
 
+@media (max-width: 765px) {
+  .project p {
+    font-size: 1rem;
+  }
+}
 .project h3 {
   text-align: center;
   margin-top: 1.5rem;
@@ -226,7 +280,12 @@ figcaption {
   outline: none;
   border: 1px solid #2f3542;
 }
-
+@media (max-width: 765px) {
+  .upgrade-inp1 {
+    top: 5rem;
+    left: 1rem;
+  }
+}
 .upgrade-inp2 {
   position: absolute;
   top: 9rem;
@@ -234,6 +293,12 @@ figcaption {
   height: 2rem;
   outline: none;
   border: 1px solid #2f3542;
+}
+@media (max-width: 765px) {
+  .upgrade-inp2 {
+    top: 8rem;
+    left: 1rem;
+  }
 }
 
 .upgrade-txt {
@@ -243,6 +308,15 @@ figcaption {
   font-size: 1.1rem;
   outline: none;
   border: 1px solid #2f3542;
+}
+
+@media (max-width: 765px) {
+  .upgrade-txt {
+    top: 11rem;
+    left: 1rem;
+    height: 10rem;
+    width: 15rem;
+  }
 }
 
 .upgrade-btn {
@@ -255,8 +329,18 @@ figcaption {
   border: 1px solid #2f3542;
   background-color: #2f3542;
   color: white;
-  font-family:  "Indie Flower", cursive;
+  font-family: "Indie Flower", cursive;
   font-size: 1.2rem;
+}
+
+@media (max-width: 765px) {
+  .upgrade-btn {
+    bottom: 3rem;
+    left: 7rem;
+    height: 2rem;
+    width: 6rem;
+    font-size: 1rem;
+  }
 }
 
 .AllPhotos-div {
@@ -264,7 +348,7 @@ figcaption {
   flex-wrap: wrap;
   justify-content: center;
   font-size: 2rem;
-  font-family:  "Indie Flower", cursive;
+  font-family: "Indie Flower", cursive;
 }
 
 .image img {
@@ -294,7 +378,7 @@ figcaption {
   aspect-ratio: 1;
   border-radius: 0px;
 }
-.message{
+.message {
   display: none;
   position: absolute;
   z-index: 2;
@@ -304,5 +388,5 @@ figcaption {
   width: 12rem;
   text-align: center;
   font-size: 2rem;
-  font-family:  "Indie Flower", cursive;
+  font-family: "Indie Flower", cursive;
 }

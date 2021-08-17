@@ -20,8 +20,7 @@ let Home = () => {
           })}
         </svg>
         <p className={isHidden ? "" : "show-p"}>
-          You can find me around the web
-          <span class="material-icons-two-tone">public</span>
+          You can find me around the web !!
         </p>
       </div>
     </div>

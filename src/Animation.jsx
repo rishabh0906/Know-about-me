@@ -16,13 +16,21 @@ let Animation = (props) => {
 
     return "";
   };
-
+  
+  let check2=()=>{
+          let max_width=window.outerWidth;
+          if(max_width>765){
+          return   40 + props.obj.index * (props.obj.item === "i" ? 31 : 30)
+          }
+          return 15 + props.obj.index * (props.obj.item === "i" ? 16 : 15.5);
+          
+        }
+        
   return (
     <text
       className={check()}
       fill="#333"
-      font-size="64"
-      x={40 + props.obj.index * (props.obj.item === "i" ? 31 : 30)}
+      x={check2()}
       y="86"
     >
       {props.obj.item}
