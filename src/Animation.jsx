@@ -7,10 +7,10 @@ let Animation = (props) => {
     setTimeout(() => {
       setHidden(false);
     }, 100 + props.obj.index * 100);
-  }, []);
+  });
 
   let check = () => {
-    if (isHidden == false) {
+    if (isHidden === false) {
       return "show";
     }
 
@@ -22,7 +22,7 @@ let Animation = (props) => {
       className={check()}
       fill="#333"
       font-size="64"
-      x={40 + props.obj.index * (props.obj.item == "i" ? 31 : 30)}
+      x={40 + props.obj.index * (props.obj.item === "i" ? 31 : 30)}
       y="86"
     >
       {props.obj.item}

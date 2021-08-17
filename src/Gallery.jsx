@@ -1,7 +1,7 @@
 import Photo from "./Photo";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
-import { firebase, storage, firestore } from "./firebase";
+import { firestore } from "./firebase";
 
 let Gallery = () => {
   let [AllPhotoURL, setURL] = useState(null);
@@ -20,8 +20,6 @@ let Gallery = () => {
     };
     f();
   }, []);
-
-
 
   return (
     <>
@@ -43,7 +41,7 @@ let Gallery = () => {
           <img src={ZoomedPhoto == null ? "" : ZoomedPhoto} alt="Zoomed" />
         </div>
         <h1 className="heading">Although, I am not a Dweeb !!</h1>
-        <div className="AllPhotos-div" >
+        <div className="AllPhotos-div">
           {AllPhotoURL == null
             ? "Loading..."
             : AllPhotoURL.map((ele) => {

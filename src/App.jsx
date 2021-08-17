@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import About from "./About";
 import "./App.css";
-import Contact_Palette from "./Contactpalette.jsx";
+import ContactPalette from "./Contactpalette.jsx";
 import Gallery from "./Gallery";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
@@ -15,7 +15,7 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <Contact_Palette />
+        <ContactPalette />
 
         <Switch>
           <Route path="/about">

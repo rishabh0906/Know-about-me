@@ -1,4 +1,4 @@
-let Contact_Palette = () => {
+let ContactPalette = () => {
   return (
     <div className="Contact-Pallete">
       <a
@@ -45,4 +45,4 @@ let Contact_Palette = () => {
   );
 };
 
-export default Contact_Palette;
+export default ContactPalette;

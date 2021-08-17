@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import { createElement, useState } from "react";
+import {  useState } from "react";
 
 let UpgradeMe = () => {
   let [name, setName] = useState("");
@@ -73,7 +73,7 @@ let UpgradeMe = () => {
         <button
           className="upgrade-btn"
           onClick={(e) => {
-            if (name == "" || email == "" || text == "") return;
+            if (name === "" || email === "" || text === "") return;
             setSeen(true);
             serverRequest().then(()=>{
 
