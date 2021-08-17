@@ -10,7 +10,7 @@ import Home from "./Home";
 
 function App() {
 
-  console.log(process.env);
+  console.log("hi !!");
   return (
     <>
       <Router>
