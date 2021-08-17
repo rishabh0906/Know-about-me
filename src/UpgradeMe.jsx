@@ -36,7 +36,7 @@ let UpgradeMe = () => {
     <>
       <Logo />
       <div className="Main-Content slide-left">
-        <p className="message" style={{display:messageSeen==false?"none":"inline"}} >Sending...</p>
+        <p className="message" style={{display:messageSeen===false?"none":"inline"}} >Sending...</p>
         <h1 className="heading">Let me Know You</h1>
 
         <input
