@@ -5,7 +5,7 @@ import ContactPalette from "./Contactpalette.jsx";
 import Gallery from "./Gallery";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
-import UpgradeMe from "./UpgradeMe";
+import Resume from "./Resume";
 import Home from "./Home";
 
 function App() {
@@ -24,8 +24,8 @@ function App() {
           <Route path="/gallery">
             <Gallery />
           </Route>
-          <Route path="/upgradeMe">
-            <UpgradeMe />
+          <Route path="/resume">
+            <Resume />
           </Route>
           <Route path="/projects">
             <Projects />

@@ -12,7 +12,7 @@ let NavBar = () => {
         <Link to="/gallery">Gallery</Link>
       </p>
       <p>
-        <Link to="/upgradeMe">UpgradeMe</Link>
+        <Link to="/resume">Resume</Link>
       </p>
     </div>
   );

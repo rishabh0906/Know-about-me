@@ -272,76 +272,8 @@ figcaption {
   padding: 1rem;
 }
 
-.upgrade-inp1 {
-  position: absolute;
-  top: 9rem;
-  left: 5rem;
-  height: 2rem;
-  outline: none;
-  border: 1px solid #2f3542;
-}
-@media (max-width: 765px) {
-  .upgrade-inp1 {
-    top: 5rem;
-    left: 1rem;
-  }
-}
-.upgrade-inp2 {
-  position: absolute;
-  top: 9rem;
-  left: 25rem;
-  height: 2rem;
-  outline: none;
-  border: 1px solid #2f3542;
-}
-@media (max-width: 765px) {
-  .upgrade-inp2 {
-    top: 8rem;
-    left: 1rem;
-  }
-}
 
-.upgrade-txt {
-  position: absolute;
-  top: 12rem;
-  left: 5rem;
-  font-size: 1.1rem;
-  outline: none;
-  border: 1px solid #2f3542;
-}
 
-@media (max-width: 765px) {
-  .upgrade-txt {
-    top: 11rem;
-    left: 1rem;
-    height: 10rem;
-    width: 15rem;
-  }
-}
-
-.upgrade-btn {
-  position: absolute;
-  bottom: 7rem;
-  left: 34rem;
-  height: 3rem;
-  width: 7rem;
-  outline: none;
-  border: 1px solid #2f3542;
-  background-color: #2f3542;
-  color: white;
-  font-family: "Indie Flower", cursive;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 765px) {
-  .upgrade-btn {
-    bottom: 3rem;
-    left: 7rem;
-    height: 2rem;
-    width: 6rem;
-    font-size: 1rem;
-  }
-}
 
 .AllPhotos-div {
   display: flex;
@@ -378,15 +310,9 @@ figcaption {
   aspect-ratio: 1;
   border-radius: 0px;
 }
-.message {
-  display: none;
-  position: absolute;
-  z-index: 2;
-  top: 14rem;
-  right: 10rem;
-  height: 10rem;
-  width: 12rem;
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Indie Flower", cursive;
+
+embed{
+  height: 82%;
+  width: 80%;
+  margin-left: 10%;
 }
