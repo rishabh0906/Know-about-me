@@ -7,7 +7,7 @@ let About = () => {
       <div className="Main-Content slide-left">
         <h1 className="heading">Let me Introduce myself </h1>
         <p className="About-paragraph">
-          Myself Rishabh Jain ,currently studying computer science at Guru
+          I am Rishabh Jain ,currently studying computer science at Guru
           Gobind Singh Indraprastha University, New Delhi, India. <br></br>
           You can find me playing around the web and sometimes , you can catch
           me solving coding problems on different platforms such as{" "}
@@ -34,7 +34,7 @@ let About = () => {
           >
             leetcode
           </a>
-          and many more . I like to explore new technologies and always try to
+           {" "} and many more . I like to explore new technologies and always try to
           find something from nothing . I started competitive programming in
           month of November-December , 2020 and i recently started doing web
           development. Around 1 month of learning React ,HTML ,CSS and

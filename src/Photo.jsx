@@ -2,8 +2,7 @@ let Photo = (props) => {
   return (
     <figure
       onClick={(e) => {
-        props.setZoom(props.content.URL);
-      
+        props.setZoom(props.content.Url);
       }}
       onMouseEnter={(e) => {
         e.currentTarget.children[1].style.display = "flex";
@@ -13,7 +12,7 @@ let Photo = (props) => {
       }}
     >
       <div className="image">
-        <img src={props.content.URL} alt="logo" />
+        <img src={props.content.Url} alt="logo" />
       </div>
       <div className="caption">
         <figcaption> {props.content.Caption} </figcaption>

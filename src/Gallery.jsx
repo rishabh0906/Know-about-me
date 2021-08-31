@@ -2,6 +2,7 @@ import Photo from "./Photo";
 import Logo from "./Logo";
 import { useEffect, useState } from "react";
 import { firestore } from "./firebase";
+import { images } from "./Allimage";
 
 let Gallery = () => {
   let [AllPhotoURL, setURL] = useState(null);
@@ -9,14 +10,29 @@ let Gallery = () => {
 
   useEffect(() => {
     let f = () => {
-      firestore.collection("images").onSnapshot((querySnapShot) => {
-        let AllPhotosData = [];
-        querySnapShot.forEach((doc) => {
-          AllPhotosData.push(doc.data());
-        });
+      // firestore.collection("images").onSnapshot((querySnapShot) => {
+      //   let AllPhotosData = [];
+      //   querySnapShot.forEach((doc) => {
+      //     AllPhotosData.push(doc.data());
+      //   });
+      // });
+      var currentIndex = images.length,
+        randomIndex;
 
-        setURL(AllPhotosData);
-      });
+      // While there remain elements to shuffle...
+      while (currentIndex != 0) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [images[currentIndex], images[randomIndex]] = [
+          images[randomIndex],
+          images[currentIndex],
+        ];
+      }
+
+      setURL(images);
     };
     f();
   }, []);
